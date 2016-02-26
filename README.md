@@ -10,3 +10,22 @@ Apache ActiveMQ is fast, supports many [Cross Language Clients and Protocols](ht
 
 ## References
 -   [ActiveMQ 百度百科](http://baike.baidu.com/link?url=YJavmhPTXQrMivOqm8WodnR6uEdCrYmPk3Zc78O-Jswl3sqFK_BcU5_8kObGAxd0PowFYiQcBrq08bOoSsUht_)
+
+## Examples Requirements
+
+1.  Download activemq server at http://activemq.apache.org/download.html.
+
+2.  Extract downloaded file and run command at below: 
+```cmd
+    activemq start
+```
+
+3.  add activemq library in [build.gradle](build.gradle)
+```groovy
+compile 'org.apache.activemq:activemq-all:${version}'
+```
+
+4.  run tests by gradle.
+```groovy
+ gradle test
+```
